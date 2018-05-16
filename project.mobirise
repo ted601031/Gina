@@ -1,0 +1,1166 @@
+{
+  "settings": {
+    "name": "Site-05-15_1740",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "spaceamp",
+      "title": "SpaceAMP",
+      "styling": {
+        "primaryColor": "#e94dff",
+        "secondaryColor": "#46004C",
+        "successColor": "#2BE080",
+        "infoColor": "#222222",
+        "warningColor": "#E0C119",
+        "dangerColor": "#EB5A1A",
+        "mainFont": "Arapey",
+        "display1Font": "Arapey",
+        "display1Size": 7.5,
+        "display2Font": "Arapey",
+        "display2Size": 2.2,
+        "display5Font": "Lato",
+        "display5Size": 1.1,
+        "display7Font": "Lato",
+        "display7Size": 1,
+        "display4Font": "Lato",
+        "display4Size": 0.9,
+        "display3Font": "Lato",
+        "display3Size": 0.8,
+        "display8Font": "Arapey",
+        "display8Size": 22,
+        "isRoundedButtons": true
+      },
+      "additionalSetColors": [
+        "#e897f3",
+        "#fbe6e5",
+        "#fcbccd",
+        "#212529"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.7.2",
+    "uniqCompNum": 36,
+    "versionPublish": "4.7.2",
+    "favicon": "",
+    "noImageResize": "",
+    "google-analytics": "",
+    "siteUrl": "undefined",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            ".nav-item:focus, .nav-link:focus": {
+              "outline": "none"
+            },
+            ".navbar-expand-lg": {
+              "@media (min-width: 900px)": {
+                "justify-content": "space-around"
+              }
+            },
+            ".navbar-nav": {
+              "list-style-type": "none",
+              "display": "flex",
+              "flex-direction": "row",
+              "padding-left": "0",
+              "> .container": {
+                "padding-left": "30px!important",
+                "padding-right": "30px!important",
+                "@media (max-width: 992px)": {
+                  "padding-left": "15px!important",
+                  "padding-right": "15px!important"
+                },
+                "justify-content": "space-between"
+              },
+              ".nav-link": {
+                "color": "#989898",
+                "margin": ".667em 1em",
+                "font-weight": "normal",
+                "letter-spacing": "1px",
+                "&:hover": {
+                  "color": "@primaryColor"
+                }
+              }
+            },
+            "@media (max-width: 991px)": {
+              "ul.navbar-nav": {
+                "flex-direction": "column !important",
+                "li": {
+                  "margin": "auto"
+                }
+              },
+              ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                "content": "''",
+                "margin-left": ".25rem",
+                "border-top": "0.35em solid",
+                "border-right": "0.35em solid transparent",
+                "border-left": "0.35em solid transparent",
+                "border-bottom": "0",
+                "top": "55%"
+              },
+              ".nav-dropdown .dropdown-menu .dropdown-item": {
+                "justify-content": "center",
+                "display": "flex !important",
+                "align-items": "center"
+              }
+            },
+            "& when (@collapsed)": {
+              "ul.navbar-nav": {
+                "flex-direction": "column !important",
+                "li": {
+                  "margin": "auto"
+                }
+              },
+              ".dropdown-toggle[data-toggle=\"dropdown-submenu\"]:after": {
+                "content": "''",
+                "margin-left": ".25rem",
+                "border-top": "0.35em solid",
+                "border-right": "0.35em solid transparent",
+                "border-left": "0.35em solid transparent",
+                "border-bottom": "0",
+                "top": "55%"
+              },
+              ".nav-dropdown .dropdown-menu .dropdown-item": {
+                "justify-content": "center",
+                "display": "flex !important",
+                "align-items": "center"
+              }
+            },
+            ".nav-dropdown .dropdown-menu": {
+              "border-radius": "0",
+              "border": "0",
+              "left": "0",
+              "margin": "0",
+              "min-width": "10rem",
+              "padding-bottom": "1.25rem",
+              "padding-top": "1.25rem",
+              "position": "absolute",
+              ".dropdown-item": {
+                "font-weight": "400",
+                "line-height": "2",
+                "display": "flex",
+                "align-items": "center",
+                "width": "100%",
+                "padding": ".25rem 1.5rem",
+                "clear": "both",
+                "text-align": "inherit",
+                "white-space": "nowrap",
+                "background": "0 0",
+                "border": "0"
+              },
+              ".dropdown": {
+                "position": "relative"
+              }
+            },
+            ".nav-item.dropdown": {
+              "position": "relative",
+              ".dropdown-menu": {
+                "z-index": "-1",
+                "opacity": "0",
+                "pointer-events": "none"
+              },
+              "&:hover": {
+                "& > .dropdown-menu": {
+                  "z-index": "1",
+                  "opacity": "1",
+                  "pointer-events": "all"
+                }
+              }
+            },
+            ".dropdown-menu .dropdown:hover": {
+              "& > .dropdown-menu": {
+                "z-index": "1",
+                "opacity": "1",
+                "pointer-events": "all"
+              }
+            },
+            ".link.dropdown-toggle:after": {
+              "content": "''",
+              "margin-left": ".25rem",
+              "border-top": "0.35em solid",
+              "border-right": "0.35em solid transparent",
+              "border-left": "0.35em solid transparent",
+              "border-bottom": "0"
+            },
+            ".nav-dropdown .dropdown-submenu": {
+              "top": "0"
+            },
+            ".navbar": {
+              "z-index": "100",
+              "display": "flex",
+              "flex-direction": "row",
+              "width": "100%",
+              "transition": "all .3s",
+              "background": "@menuBgColor",
+              "> .container": {
+                "position": "static",
+                "justify-content": "space-between",
+                "min-height": "90px",
+                "padding-left": "30px!important",
+                "padding-right": "30px!important",
+                "@media (max-width: 992px)": {
+                  "padding-left": "15px!important",
+                  "padding-right": "15px!important"
+                }
+              },
+              ".navbar-logo": {
+                "margin-right": ".8rem",
+                "img": {
+                  "height": "auto"
+                }
+              },
+              "&.navbar-short": {
+                "background": "@menuBgColor !important",
+                ".navbar-brand": {
+                  "padding": "0"
+                }
+              },
+              "&.opened": {
+                "transition": "all .3s",
+                "background": "@menuBgColor !important"
+              },
+              ".dropdown-item": {
+                "padding": ".25rem 1.5rem"
+              },
+              ".navbar-collapse": {
+                "text-align": "right",
+                "display": "flex",
+                "justify-content": "flex-end",
+                "z-index": "1",
+                "flex-basis": "auto",
+                "align-items": "center",
+                "& when not (@showItems)": {
+                  "display": "none !important"
+                }
+              },
+              "&.collapsed": {
+                "button.navbar-toggler": {
+                  "display": "inline-block !important"
+                },
+                ".navbar-collapse": {
+                  "display": "none",
+                  "position": "absolute",
+                  "top": "0",
+                  "right": "0",
+                  "min-height": "100vh",
+                  "background": "@menuBgColor",
+                  "padding": "1.5rem 2rem 1rem 2rem",
+                  "& when (@sidebarSide = 'left')": {
+                    "right": "auto",
+                    "left": "0"
+                  }
+                },
+                "&.opened": {
+                  ".navbar-collapse": {
+                    "&.show, &.collapsing": {
+                      "display": "block"
+                    }
+                  },
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  "position": "relative",
+                  "background": "transparent !important",
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": ".25rem 1.5rem",
+                  "text-align": "center",
+                  "margin": "0"
+                },
+                ".navbar-brand": {
+                  "flex-shrink": "initial",
+                  "word-break": "break-word"
+                }
+              },
+              "@media (max-width: 991px)": {
+                ".navbar-collapse": {
+                  "display": "none",
+                  "position": "absolute",
+                  "top": "0",
+                  "right": "0",
+                  "min-height": "100vh",
+                  "background": "@menuBgColor",
+                  "padding": "1rem 2rem 1rem 2rem",
+                  "& when (@sidebarSide = 'left')": {
+                    "right": "auto",
+                    "left": "0"
+                  }
+                },
+                "&.opened": {
+                  ".navbar-collapse": {
+                    "&.show, &.collapsing": {
+                      "display": "block"
+                    }
+                  },
+                  ".dropdown-menu": {
+                    "top": "0"
+                  }
+                },
+                ".dropdown-menu": {
+                  "position": "relative",
+                  "background": "transparent !important",
+                  ".dropdown-submenu": {
+                    "left": "0 !important"
+                  },
+                  ".dropdown-item:after": {
+                    "right": "auto"
+                  }
+                },
+                ".dropdown-menu .dropdown-item": {
+                  "padding": ".25rem 1.5rem",
+                  "text-align": "center",
+                  "margin": "0"
+                },
+                ".navbar-brand": {
+                  "flex-shrink": "initial",
+                  "word-break": "break-word"
+                }
+              }
+            },
+            ".navbar-brand": {
+              "display": "flex",
+              "flex-shrink": "0",
+              "align-items": "center",
+              "margin-right": "0",
+              "padding": "0",
+              "transition": "all .3s",
+              "word-break": "break-word",
+              "z-index": "1",
+              ".navbar-caption": {
+                "line-height": "inherit !important",
+                "font-weight": "normal"
+              },
+              ".navbar-logo a": {
+                "outline": "none"
+              }
+            },
+            ".dropdown-item.active,.dropdown-item:active": {
+              "background-color": "transparent"
+            },
+            ".navbar-expand-lg .navbar-nav .nav-link": {
+              "padding": "0"
+            },
+            ".navbar.navbar-expand-lg .dropdown": {
+              ".dropdown-menu": {
+                "background": "@menuBgColor",
+                ".dropdown-submenu": {
+                  "margin": "0",
+                  "left": "100%"
+                }
+              }
+            },
+            ".navbar .dropdown.open > .dropdown-menu": {
+              "display": "block"
+            },
+            "ul.navbar-nav": {
+              "flex-wrap": "wrap"
+            },
+            ".navbar-buttons": {
+              "text-align": "center"
+            },
+            "button.navbar-toggler": {
+              "display": "none",
+              "outline": "none",
+              "width": "31px",
+              "height": "20px",
+              "cursor": "pointer",
+              "transition": "all .2s",
+              "position": "relative",
+              "align-self": "center",
+              ".hamburger span": {
+                "position": "absolute",
+                "right": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "top": "0",
+                  "transition": "all .2s"
+                },
+                "&:nth-child(2)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(3)": {
+                  "top": "8px",
+                  "transition": "all .15s"
+                },
+                "&:nth-child(4)": {
+                  "top": "16px",
+                  "transition": "all .2s"
+                }
+              }
+            },
+            "nav.opened .navbar-toggler:not(.hide) .hamburger span": {
+              "&:nth-child(1)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              },
+              "&:nth-child(2)": {
+                "-webkit-transform": "rotate(45deg)",
+                "transform": "rotate(45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(3)": {
+                "-webkit-transform": "rotate(-45deg)",
+                "transform": "rotate(-45deg)",
+                "transition": "all .25s"
+              },
+              "&:nth-child(4)": {
+                "top": "8px",
+                "width": "0",
+                "opacity": "0",
+                "right": "50%",
+                "transition": "all .2s"
+              }
+            },
+            ".navbar-dropdown": {
+              "& when (@sticky)": {
+                "position": "fixed"
+              }
+            },
+            "a.nav-link": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center"
+            },
+            ".nav-link,.dropdown-item": {
+              ".mbr-iconfont": {
+                "margin-right": ".2rem"
+              }
+            },
+            ".ampstart-btn": {
+              "&.hamburger": {
+                "position": "relative",
+                "margin": "auto 0",
+                "width": "30px",
+                "height": "20px",
+                "background": "none",
+                "border": "none",
+                "cursor": "pointer",
+                "z-index": "1000",
+                "&:focus": {
+                  "outline": "none"
+                },
+                "span": {
+                  "position": "absolute",
+                  "right": "0",
+                  "width": "30px",
+                  "height": "2px",
+                  "border-right": "5px",
+                  "background-color": "@hamburgerColor",
+                  "&:nth-child(1)": {
+                    "top": "0",
+                    "transition": "all .2s"
+                  },
+                  "&:nth-child(2)": {
+                    "top": "8px",
+                    "transition": "all .15s"
+                  },
+                  "&:nth-child(3)": {
+                    "top": "8px",
+                    "transition": "all .15s"
+                  },
+                  "&:nth-child(4)": {
+                    "top": "16px",
+                    "transition": "all .2s"
+                  }
+                }
+              }
+            },
+            "@media (min-width: 992px)": {
+              "& when not (@collapsed)": {
+                ".ampstart-btn,amp-sidebar": {
+                  "display": "none"
+                },
+                ".dropdown-menu .dropdown-toggle:after": {
+                  "content": "''",
+                  "border-bottom": "0.35em solid transparent",
+                  "border-left": "0.35em solid",
+                  "border-right": "0",
+                  "border-top": "0.35em solid transparent",
+                  "margin-left": "0.3rem",
+                  "margin-top": "-0.3077em",
+                  "position": "absolute",
+                  "right": "1.1538em",
+                  "top": "50%"
+                }
+              }
+            },
+            "amp-sidebar": {
+              "min-width": "260px!important",
+              "z-index": "1050!important",
+              "background-color": "@menuBgColor"
+            },
+            "amp-sidebar.open:after": {
+              "content": "''",
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "bottom": "0",
+              "right": "0",
+              "background-color": "red"
+            },
+            ".open": {
+              "transform": "translateX(0%) !important",
+              "display": "block!important"
+            },
+            ".builder-sidebar": {
+              "text-align": "right",
+              "background-color": "@menuBgColor",
+              "position": "relative",
+              "height": "100vh",
+              "z-index": "1030",
+              "padding": "1rem 2rem",
+              "max-width": "20rem",
+              ".dropdown": {
+                "position": "relative",
+                "&:hover": {
+                  "& > .dropdown-menu": {
+                    "position": "relative",
+                    "text-align": "center"
+                  }
+                }
+              }
+            },
+            ".sidebar": {
+              "padding": "1rem 0",
+              "margin": "0"
+            },
+            ".sidebar > li": {
+              "list-style": "none",
+              "display": "flex",
+              "flex-direction": "column"
+            },
+            ".sidebar a": {
+              "display": "block",
+              "text-decoration": "none",
+              "margin-bottom": "10px"
+            },
+            ".close-sidebar": {
+              "width": "30px",
+              "height": "30px",
+              "position": "relative",
+              "cursor": "pointer",
+              "background-color": "transparent",
+              "border": "none",
+              "&:focus": {
+                "outline": "2px auto @primaryColor"
+              },
+              "span": {
+                "position": "absolute",
+                "left": "0",
+                "width": "30px",
+                "height": "2px",
+                "border-right": "5px",
+                "background-color": "@hamburgerColor",
+                "&:nth-child(1)": {
+                  "transform": "rotate(45deg)"
+                },
+                "&:nth-child(2)": {
+                  "transform": "rotate(-45deg)"
+                }
+              }
+            },
+            "amp-img": {
+              "width": "~\"@{logoWidth}px\"",
+              "display": "flex",
+              "align-items": "center",
+              "@media (max-width: 768px)": {
+                "min-height": "55px",
+                "min-width": "55px"
+              }
+            },
+            ".container": {
+              "display": "flex"
+            }
+          },
+          "_name": "menu1",
+          "_customHTML": "<section class=\"menu horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main,amp-sidebar\" always-top=\"\" global=\"\" once=\"menu\" position-absolute=\"\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\" checked=\"\">\n\t<input type=\"range\" title=\"Logo Width\" inline=\"\" name=\"logoWidth\" min=\"100\" max=\"200\" value=\"155\" step=\"1\" condition=\"showLogo\">\n\t<input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\">\n\t<input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked=\"\">\n\t<input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\">\n\t<input type=\"checkbox\" title=\"Sticky\" name=\"sticky\" checked=\"\">\n\t<select title=\"Sidebar Side\" name=\"sidebarSide\">\n\t\t<option value=\"left\">Left</option>\n\t\t<option value=\"right\" selected=\"\">Right</option>\n\t</select>\n\t<input type=\"checkbox\" title=\"Collapsed\" name=\"collapsed\">\n\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#000000\">\n\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#fcbccd\">\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t\n\t<nav class=\"navbar navbar-dropdown \" mbr-class=\"{'navbar-fixed-top':sticky,\n\t\t'navbar-expand-lg':!collapsed,\n\t\t'collapsed':collapsed}\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t\t<span mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/logo-small-250x65.png\" layout=\"responsive\" width=\"157.06153846153848\" height=\"41\" alt=\"Mobirise\">\n\t\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/logo-small-250x65.png\" alt=\"Mobirise\" title=\"\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</span>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons=\"\" mbr-theme-style=\"display-6\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\">\n\t\t\t\t\t<a class=\"navbar-caption mbr-black\" data-app-selector=\".navbar-caption\" href=\"https://mobirise.com\">SpaceAMP</a>\n\t\t\t\t</span>\n\t\t\t</div>\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<button class=\"navbar-toggler mb-2\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems||showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t\t</button>\n\t\t\t\t<ul mbr-menu=\"\" class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-5\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish &amp;&amp; !showBrand &amp;&amp; !showLogo}\"><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link mbr-black\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\">價格表</a>\n\t\t\t\t\t</li><li class=\"nav-item\"><a class=\"nav-link link mbr-black\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\">作品集</a></li><li class=\"nav-item dropdown open\">\n\t\t\t\t\t\t<a class=\"nav-link link mbr-black dropdown-toggle\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" data-toggle=\"dropdown-submenu\" aria-expanded=\"false\">\n\t\t\t\t\t\t\t植睫除毛教學</a>\n\t\t\t\t\t\t<div class=\"dropdown-menu\">\n\t\t\t\t\t\t\t<a class=\"mbr-black dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\">所有課程資訊</a>\n\t\t\t\t\t\t\t<a class=\"mbr-black dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\">單根式初階創業班</a><a class=\"mbr-black dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" aria-expanded=\"true\">369植睫全修班</a><a class=\"mbr-black dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" aria-expanded=\"true\">高階課程-山茶花</a><a class=\"mbr-black dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" aria-expanded=\"true\">海外學員專區</a><a class=\"mbr-black dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" aria-expanded=\"true\">熱蠟除毛課程</a><a class=\"mbr-black dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" aria-expanded=\"true\">線上教學</a><a class=\"mbr-black dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" aria-expanded=\"true\">輔導考照</a><a class=\"mbr-black dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" aria-expanded=\"true\">學員分享</a><a class=\"mbr-black dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" aria-expanded=\"true\">美睫師小常識</a><a class=\"mbr-black dropdown-item\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\" aria-expanded=\"true\">教學展演秀</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</li><li class=\"nav-item\"><a class=\"nav-link link mbr-black\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\">藝術美甲</a></li><li class=\"nav-item\"><a class=\"nav-link link mbr-black\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\">私密除毛</a></li>\n\t\t\t\t\t\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link mbr-black\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\">\n\t\t\t\t\t\t\t半永久紋繡</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link mbr-black\" href=\"https://mobirise.com\" data-app-selector=\".nav-link,.dropdown-item\">\n\t\t\t\t\t\t\t保養與照顧</a>\n\t\t\t\t\t</li></ul>\n\t\t\t\t\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons=\"\" mbr-theme-style=\"display-3\" class=\"navbar-buttons mbr-section-btn\">\n\t\t\t\t\t<a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.com\">\n\t\t\t\t\t\tContact Us\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems||showButtons\">\n\t\t\t<div class=\"hamburger\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</div>\n\t\t\t</button>\n\t\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-class=\"{'sticky-but':sticky}\" mbr-if=\"showItems||showButtons\">\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t<span></span>\n\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n</section>",
+          "_cid": "qSaLgFUdps",
+          "_anchor": "menu1-d",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "menu",
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".carousel-img": {
+              "width": "100%",
+              "text-align": "center",
+              "margin": "0"
+            },
+            ".container-fluid": {
+              "max-width": "100%",
+              "padding": "0"
+            },
+            ".mbr-section-subtitle": {
+              "padding-bottom": "2rem"
+            },
+            ".mbr-section-title": {
+              "& when not (@showSubTitle)": {
+                "padding-bottom": "2rem"
+              }
+            },
+            "p.mbr-text": {
+              "padding-top": "2rem",
+              "padding-bottom": "0",
+              "margin": "0"
+            },
+            ".mbr-section-btn": {
+              "padding-top": "2rem"
+            },
+            ".amp-carousel-button": {
+              "width": "50px",
+              "height": "100px",
+              "outline": "none",
+              "background-color": "rgba(0, 0, 0, 0.5)",
+              "&:hover": {
+                "background-color": "rgba(0, 0, 0, 0.3)"
+              }
+            }
+          },
+          "_name": "slider6",
+          "_customHTML": "<section class=\"slider3 slider\" group=\"Carousels &amp; Sliders\" plugins=\"amp-main,amp-carousel\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<input type=\"checkbox\" title=\"Full Screen Bg\" name=\"fullScreen\">\n\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n\t<input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n\t<input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\t<select title=\"Images\" name=\"imagesAmount\">\n\t\t<option value=\"2\">2</option>\n\t\t<option value=\"3\">3</option>\n\t\t<option value=\"4\">4</option>\n\t\t<option value=\"5\">5</option>\n\t\t<option value=\"6\" selected=\"\">6</option>\n\t</select>\n\t<fieldset type=\"background\" name=\"bg\">\n\t\t<input type=\"image\" title=\"Background Image\" value=\"../_images/backgrounds/background1.jpg\" selected=\"\">\n\t\t<input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n\t</fieldset>\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"container-fluid\">\n\t\t<div class=\"container\">\n\t\t\t<h2 mbr-if=\"showTitle\" class=\"mbr-section-title align-center mbr-fonts-style mbr-bold mbr-white\" mbr-theme-style=\"display-2\">\n\t\t\tCarousel without spacings\n\t\t\t</h2>\n\t\t\t<h3 mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\">\n\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit.\n\t\t\t</h3>\n\t\t</div>\n\t\t<div class=\"slider-box\">\n\t\t\t<amp-carousel class=\"carousel\" height=\"400\" layout=\"fixed-height\" type=\"carousel\">\n\t\t\t\t<amp-img class=\"carousel-img\" src=\"@PROJECT_PATH@/assets/images/header1-slide7.jpg\" height=\"400\" width=\"600\" alt=\"Mobirise\">\n\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/header1-slide7.jpg\" alt=\"Mobirise\">\n\t\t\t\t</amp-img>\n\t\t\t\t<amp-img class=\"carousel-img\" src=\"@PROJECT_PATH@/assets/images/header1-slide8.jpg\" mbr-class=\"{'super-hide': imagesAmount < 2}\" height=\"400\" width=\"600\" alt=\"Mobirise\">\n\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/header1-slide8.jpg\" alt=\"Mobirise\">\n\t\t\t\t</amp-img>\n\t\t\t\t<amp-img class=\"carousel-img\" src=\"@PROJECT_PATH@/assets/images/header2-slide8.jpg\" mbr-class=\"{'super-hide': imagesAmount < 3}\" height=\"400\" width=\"600\" alt=\"Mobirise\">\n\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/header2-slide8.jpg\" alt=\"Mobirise\">\n\t\t\t\t</amp-img>\n\t\t\t\t<amp-img class=\"carousel-img\" src=\"@PROJECT_PATH@/assets/images/header2-slide6.jpg\" mbr-class=\"{'super-hide': imagesAmount < 4}\" height=\"400\" width=\"600\" alt=\"Mobirise\">\n\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/header2-slide6.jpg\" alt=\"Mobirise\">\n\t\t\t\t</amp-img>\n\t\t\t\t<amp-img class=\"carousel-img\" src=\"@PROJECT_PATH@/assets/images/header3-slide1.jpg\" mbr-class=\"{'super-hide': imagesAmount < 5}\" height=\"400\" width=\"600\" alt=\"Mobirise\">\n\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/header3-slide1.jpg\" alt=\"Mobirise\">\n\t\t\t\t</amp-img>\n\t\t\t\t<amp-img class=\"carousel-img\" src=\"@PROJECT_PATH@/assets/images/header3-slide2.jpg\" mbr-class=\"{'super-hide': imagesAmount < 6}\" height=\"400\" width=\"600\" alt=\"Mobirise\">\n\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/header3-slide2.jpg\" alt=\"Mobirise\">\n\t\t\t\t</amp-img>\n\t\t\t</amp-carousel>\n\t\t</div>\n\t\t<div class=\"container\">\n\t\t\t<p class=\"mbr-text align-center mbr-fonts-style mbr-white\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae cupiditate rerum ipsum tempora vero. Fugit facilis possimus assumenda ipsa, sapiente eius sunt fuga saepe nemo. Necessitatibus consequuntur, recusandae consequatur suscipit.</p>\n\t\t\t<div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons=\"\" mbr-theme-style=\"display-4\">\n\t\t\t\t<a class=\"btn btn-md btn-black\" href=\"https://mobirise.com\">VIEW MORE</a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "qSaM8lv3UK",
+          "_anchor": "slider6-g",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "& when not (@fullWidth)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)",
+              ".mbr-section-title": {
+                "padding-bottom": "3rem"
+              }
+            },
+            "background-color": "@bgColor",
+            "& when (@fullWidth)": {
+              ".mbr-row": {
+                "margin": "0"
+              },
+              ".mbr-section-title": {
+                "padding": "1rem 0"
+              }
+            },
+            ".video-block": {
+              "margin": "auto",
+              "width": "~\"@{videoSize}%\"",
+              "& when (@fullWidth)": {
+                "width": "100% !important"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".video-block": {
+                "width": "100% !important"
+              }
+            },
+            ".mbr-section-title, .video-title B": {
+              "color": "#757575"
+            }
+          },
+          "_name": "youtube2",
+          "_customHTML": "<section class=\"youtube\" group=\"Images & Videos\" plugins=\"amp-main,amp-youtube\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth == false\">\n\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth == false\">\n\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t<input type=\"range\" inline title=\"Width\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"66\" step=\"1\" condition=\"fullWidth == false\">\n\t<input type=\"text\" title=\"Youtube Video URL\" name=\"videoUrl\" value=\"https://www.youtube.com/watch?v=BDXdzc95Ppo\">\n\t<input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#fbe6e5\">\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div mbr-class=\"{'container': fullWidth == false}\">\n\t\t<div class=\"mbr-row mbr-justify-content-center\">\n\t\t\t<div class=\"video-title mbr-col-sm-12 align-center\" mbr-class=\"{'mbr-col-md-6': !fullWidth,\n\t\t\t\t'mbr-col-md-12':fullWidth}\">\n\t\t\t\t<h2 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .video-title\"><b>天使美睫在哪裡? 台北車站M8出口</b></h2>\n\t\t\t</div>\n\t\t\t<div class=\"video-block\">\n\t\t\t\t<amp-youtube width=\"16\" height=\"9\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\">\n\t\t\t\t\t<div placeholder>\n\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</amp-youtube>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "qSaOwRgpqc",
+          "_anchor": "youtube2-k",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "& when not (@fullWidth)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)",
+              ".mbr-text": {
+                "padding-right": "2rem"
+              }
+            },
+            "background-color": "@bgColor",
+            ".image-block": {
+              "width": "~\"@{videoSize}%\""
+            },
+            ".mbr-figure-caption": {
+              "width": "25%"
+            },
+            "& when (@fullWidth)": {
+              ".image-block": {
+                "width": "100% !important"
+              },
+              ".mbr-figure-caption": {
+                "width": "100%"
+              },
+              ".mbr-text": {
+                "padding": "1rem !important"
+              },
+              ".mbr-row": {
+                "margin-left": "0",
+                "margin-right": "0"
+              },
+              "amp-img img": {
+                "width": "100%"
+              }
+            },
+            "amp-img": {
+              "text-align": "center"
+            },
+            ".mbr-text": {
+              "margin": "0",
+              "color": "#222222"
+            },
+            "@media (max-width: 767px)": {
+              ".image-block": {
+                "width": "100% !important"
+              },
+              ".mbr-figure-caption": {
+                "width": "100%"
+              },
+              ".mbr-text": {
+                "padding": ".5rem 0"
+              }
+            }
+          },
+          "_name": "image2",
+          "_customHTML": "<section class=\"image2\" group=\"Images &amp; Videos\" plugins=\"amp-main\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth == false\">\n\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"2\" step=\"1\" condition=\"fullWidth == false\">\n\t<input type=\"range\" inline=\"\" title=\"Width\" name=\"videoSize\" min=\"20\" max=\"75\" value=\"50\" step=\"1\" condition=\"fullWidth == false\">\n\t<input type=\"checkbox\" title=\"Show Caption\" name=\"showText\" checked=\"\">\n\t<input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"showText==true\">\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div mbr-class=\"{'container': fullWidth == false}\">\n\t\t<div class=\"mbr-row mbr-justify-content-center\">\n\t\t\t<div class=\"mbr-figure-caption align-right\" mbr-if=\"showText\">\n\t\t\t\t<p mbr-text=\"\" class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><b>營業時間\n</b><br>早上10：00～晚上8：00（採預約制）\n<br>\n<br><b>公休時間\n</b><br>無店休，過年照常營業。\n<br>\n<br><b>預約專線</b>\n<br>0929-303-707\n<br>\n<br><b>地址</b>\n<br>台北市中正區信陽街11號3樓\n<br>捷運台北車站\n<br>M8出口步行，請參照影片！\n<br>\n<br><b>營業項目\n</b><br>美睫、美甲、紋繡、熱蠟除毛</p>\n\t\t\t</div>\n\t\t\t<div class=\"image-block\">\n\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/map-808x700.png\" layout=\"responsive\" width=\"684.7971428571428\" height=\"594\" alt=\"Mobirise\">\n\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/map-808x700.png\" alt=\"Mobirise\" title=\"\">\n\t\t\t\t</amp-img>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "qSbOhrIWiw",
+          "_anchor": "image2-z",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "input, textarea": {
+              "background-color": "#f2f2f2",
+              "color": "#757575"
+            },
+            ".mbr-section-btn": {
+              "width": "100%",
+              ".btn": {
+                "padding": "10px 35px"
+              }
+            },
+            ".area": {
+              "width": "100%"
+            },
+            "label.input-label": {
+              "display": "flex",
+              "flex-direction": "column",
+              "width": "100%",
+              "padding": ".5rem 0",
+              "margin": "0"
+            },
+            "label.area": {
+              "padding": ".5rem 0"
+            },
+            "textarea": {
+              "width": "100%",
+              "max-width": "100%"
+            },
+            ".main-row": {
+              "padding-top": ".5rem",
+              "& when (@reverseContent)": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".iconsHeader": {
+              "text-align": "center",
+              "width": "100%"
+            },
+            ".iconsRow": {
+              "justify-content": "center"
+            },
+            ".list-item": {
+              "padding": "0 1.6rem 1.6rem 1.6rem",
+              "align-items": "center",
+              ".mbr-iconfont": {
+                "vertical-align": "middle",
+                "padding-right": "1rem",
+                "text-align": "center",
+                "font-size": "~\"@{iconsSize}rem\"",
+                "color": "@iconsColor"
+              },
+              ".iconTitle": {
+                "width": "100%",
+                "justify-content": "center",
+                "display": "flex",
+                "padding-bottom": "1rem",
+                "h4": {
+                  "margin": "auto 0"
+                }
+              },
+              "h5": {
+                "text-align": "center",
+                "margin": "0",
+                "width": "100%"
+              }
+            },
+            ".map-placeholder": {
+              "display": "none",
+              "h4": {
+                "padding-top": "5rem",
+                "color": "#767676",
+                "text-align": "center"
+              }
+            },
+            ".google-map": {
+              "height": "25rem",
+              "position": "relative",
+              "width": "100%",
+              "iframe": {
+                "height": "100%",
+                "width": "100%"
+              },
+              "[data-state-details]": {
+                "color": "#6b6763",
+                "font-family": "Montserrat",
+                "height": "1.5em",
+                "margin-top": "-0.75em",
+                "padding-left": "1.25rem",
+                "padding-right": "1.25rem",
+                "position": "absolute",
+                "text-align": "center",
+                "top": "50%",
+                "width": "100%"
+              },
+              "&[data-state]": {
+                "background": "#e9e5dc"
+              },
+              "&[data-state=\"loading\"]": {
+                "[data-state-details]": {
+                  "display": "none"
+                }
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".main-row": {
+                "& when (@reverseContent)": {
+                  "flex-direction": "column-reverse"
+                }
+              },
+              "label.input-label": {
+                "max-width": "100%"
+              },
+              ".form-content": {
+                "& when (@reverseContent)": {
+                  "padding-bottom": "2rem"
+                },
+                "& when not (@reverseContent)": {
+                  "padding-top": "2rem"
+                }
+              }
+            },
+            "@media (max-width: 768px)": {
+              "label.input-label": {
+                "width": "100%"
+              }
+            },
+            ".inputarea": {
+              "padding": "0",
+              "margin": "0"
+            },
+            ".mbr-section-subtitle": {
+              "text-align": "right",
+              "color": "#e94dff"
+            }
+          },
+          "_name": "form4",
+          "_customHTML": "<section class=\"form6 map\" group=\"Social\" plugins=\"amp-main,amp-form,amp-mustache,amp-iframe\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t<input type=\"checkbox\" title=\"Show Underline\" name=\"showUnderline\" condition=\"showTitle\" checked>\n\t<input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\" checked>\n\t<input type=\"range\" inline title=\"Icons Size\" name=\"iconsSize\" min=\"0.8\" max=\"5\" step=\"0.1\" value=\"1.5\" condition=\"showIcons\">\n\t<input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#d900ed\" condition=\"showIcons\">\n\t<input type=\"range\" inline name=\"listItems\" title=\"List Items\" min=\"0\" max=\"6\" value=\"2\">\n\t<input type=\"checkbox\" title=\"Map on Left/Right\" name=\"reverseContent\" checked>\n\t<fieldset type=\"background\" name=\"bg\">\n\t\t<input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\" selected>\n\t\t<input type=\"color\" title=\"Background Color\" value=\"#ffffff\">\n\t</fieldset>\n\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked>\n\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' && overlay\">\n\t<input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n\t<input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"ChIJDccbD3OpQjQRBTCRt1SEKQc\" value=\"台北市漢口街天使美睫\">\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n\t<div class=\"container\">\n\t\t<div class=\"mbr-row mbr-justify-content-center main-row\">\n\t\t\t<div class=\"mbr-col-lg-6 mbr-col-md-12\">\n\t\t\t\t<div class=\"mbr-row\">\n\t\t\t\t\t<div class=\"mbr-col-lg-12 iconsHeader\" mbr-if=\"listItems!=0\">\n\t\t\t\t\t\t<div class=\"mbr-row iconsRow\" mbr-list mbr-list-grow=\"listItems\">\n\t\t\t\t\t\t\t<div class=\"list-item mbr-col-lg-4 mbr-col-md-4\">\n\t\t\t\t\t\t\t\t<div class=\"iconTitle\">\n\t\t\t\t\t\t\t\t\t<div mbr-if=\"showIcons\"><span mbr-icon class=\"mbr-iconfont fa fa-phone\"></span></div>\n\t\t\t\t\t\t\t\t\t<h4 class=\"mbr-title mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-title\">\n\t\t\t\t\t\t\t\t\tPhone\n\t\t\t\t\t\t\t\t\t</h4>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<h5 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\"><b><a href=\"tel:0929-303707\">0929-303707</a></b></h5>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"list-item mbr-col-lg-4 mbr-col-md-4\">\n\t\t\t\t\t\t\t\t<div class=\"iconTitle\">\n\t\t\t\t\t\t\t\t\t<div mbr-if=\"showIcons\"><span mbr-icon class=\"mbr-iconfont fa-comment fa\"></span></div>\n\t\t\t\t\t\t\t\t\t<h4 class=\"mbr-title mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-title\">\n\t\t\t\t\t\t\t\t\tLine ID</h4>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<h5 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-subtitle\"><a href=\"tel:0929303707\">@happy520</a></h5>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"google-map\" mbr-map=\"googleMap\"></div>\n\t\t\t\t\t<div class=\"map-placeholder\">\n\t\t\t\t\t\t<div placeholder>\n\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div mbr-form class=\"mbr-col-lg-6 mbr-col-md-12 form-content\">\n\t\t\t\t<h2 mbr-if=\"showTitle\" class=\"align-left mbr-fonts-style mbr-section-title\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title, .underline\">聯絡我們</h2>\n\t\t\t\t<div class=\"underline\" mbr-if=\"showUnderline && showTitle\">\n\t\t\t\t\t<div class=\"line\"></div>\n\t\t\t\t</div>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\"></p>\n\t\t\t\t<div class=\"mbr-col-lg-12 mbr-col-md-12 inputarea\">\n\t\t\t\t\t<form class=\"mbr-form\" action=\"angeleyelash126@gmail.com\" method=\"post\" name=\"Mobirise Form\" target=\"_top\" novalidate>\n\t\t\t\t\t\t<div submit-success>\n\t\t\t\t\t\t\t<template data-form-alert type=\"amp-mustache\">Subscription successful!</template>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div submit-error>\n\t\t\t\t\t\t\t<template data-form-alert type=\"amp-mustache\">Subscription successful!</template>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"fieldset\">\n\t\t\t\t\t\t\t<label class=\"input-label\">\n\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"form[data][1][0]\" value=\"Name\">\n\t\t\t\t\t\t\t\t<input type=\"text\" name=\"form[data][1][1]\" data-form-field=\"Name\" placeholder=\"姓名\" required>\n\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t<label class=\"input-label\">\n\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"form[data][0][0]\" value=\"Email\">\n\t\t\t\t\t\t\t\t<input type=\"email\" name=\"form[data][0][1]\" data-form-field=\"Email\" placeholder=\"電子信箱\" required>\n\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t<label class=\"area\">\n\t\t\t\t\t\t\t\t<input type=\"hidden\" name=\"form[data][2][0]\" value=\"Message\">\n\t\t\t\t\t\t\t\t<textarea name=\"form[data][2][1]\" rows=\"7\" data-form-field=\"Message\" placeholder=\"留言內容\"></textarea>\n\t\t\t\t\t\t\t</label>\n\t\t\t\t\t\t\t<div class=\"mbr-section-btn align-left\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-5\"><a class=\"btn mbr-white btn-black\" href=\"https://mobirise.com\">\n\t\t\t\t\t\t\t\t\t送出</a></div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</form>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "qSb1ZZAVsn",
+          "_anchor": "form4-w",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            ".image": {
+              "overflow": "hidden",
+              "margin-bottom": "2rem"
+            },
+            "amp-img, amp-img img": {
+              "max-height": "100%!important",
+              "max-width": "100%!important"
+            },
+            "@media (max-width: 691px)": {
+              ".amp-iconfont": {
+                "padding": "0!important",
+                "padding-top": "1rem!important"
+              }
+            },
+            ".mbr-row": {
+              "text-align": "center"
+            },
+            ".mbr-section-title": {
+              "margin": "0",
+              "padding": "0",
+              "margin-bottom": "1rem"
+            },
+            ".mbr-text": {
+              "margin": "0",
+              "padding-bottom": "2rem"
+            },
+            ".mbr-section-btn": {
+              "padding-top": "0.7rem"
+            },
+            ".card": {
+              "padding": "0 1.3rem",
+              "text-align": "center",
+              "margin-bottom": "3rem",
+              "@media (max-width: 600px)": {
+                "padding": "0"
+              }
+            },
+            "h5": {
+              "font-weight": "bold",
+              "margin-bottom": "2rem"
+            },
+            ".social": {
+              "border-top": "2px solid #d0d0d0",
+              "position": "relative",
+              "flex-wrap": "nowrap"
+            },
+            ".social.mbr-row": {
+              "margin": "0"
+            },
+            ".amp-iconfont": {
+              "padding": "1rem",
+              "margin": ".5rem",
+              "color": "@iconColor",
+              "font-size": "1.4rem"
+            },
+            "a, a:hover, a:focus, button, button:hover": {
+              "outline": "0",
+              "text-decoration": "none",
+              "transition": ".4s"
+            },
+            "a:hover, span:hover": {
+              "color": "@primaryColor"
+            },
+            ".unline": {
+              "background-color": "@primaryColor"
+            },
+            ".unline:before": {
+              "content": "''",
+              "position": "absolute",
+              "top": "-2px",
+              "left": "0px",
+              "width": "0px",
+              "height": "2px",
+              "background": "@primaryColor",
+              "transition": "all 0.4s ease"
+            },
+            "img": {
+              "object-fit": "cover"
+            },
+            "amp-img": {
+              "transition": "0.5s",
+              "object-fit": "cover",
+              "margin": "0 auto"
+            },
+            ".card:hover": {
+              ".unline:before": {
+                "width": "100%"
+              },
+              "amp-img": {
+                "transform": "scale(1.06)",
+                "@media (max-width: 900px)": {
+                  "transform": "scale(1.04)"
+                },
+                "@media (max-width: 600px)": {
+                  "transform": "scale(1.02)"
+                }
+              }
+            }
+          },
+          "_name": "team1",
+          "_customHTML": "<section class=\"team1 mbr-section\" group=\"Team\" plugins=\"amp-main\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n\t<input type=\"checkbox\" title=\"Show SubTitle\" name=\"showSubTitle\">\n\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n\t<input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n\t<select title=\"Cards\" name=\"cardsAmount\">\n\t\t<option value=\"1\">1</option>\n\t\t<option value=\"2\">2</option>\n\t\t<option value=\"3\" selected=\"\">3</option>\n\t</select>\n\t<input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n\t<input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#757575\" condition=\"showIcons\">\n\t<select title=\"Icons Amount\" name=\"iconAmount\" condition=\"showIcons\">\n\t\t<option value=\"1\">1</option>\n\t\t<option value=\"2\">2</option>\n\t\t<option value=\"3\">3</option>\n\t\t<option value=\"4\" selected=\"\">4</option>\n\t</select>\n\t<fieldset type=\"background\" name=\"bg\">\n\t\t<input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/midl-941x726.png\">\n\t\t<input type=\"color\" title=\"Background Color\" value=\"#fbe6e5\" selected=\"\">\n\t</fieldset>\n\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked=\"\">\n\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n\t<input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\"></div>\n\t<div class=\"container\">\n\t\t<!--first card-->\n\t\t<div class=\"mbr-row mbr-justify-content-center\">\n\t\t\t<div class=\"card mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-4\">\n\t\t\t\t<div class=\"image\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/link04-367x162.png\" alt=\"image\" height=\"182\" width=\"414.8695652173913\" layout=\"responsive\">\n\t\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<a href=\"https://www.youtube.com/user/GinaTV168\"><img src=\"@PROJECT_PATH@/assets/images/link04-367x162.png\" class=\"mbr-temp\" alt=\"\" title=\"\"></a>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n\t\t\t\t<b>Anjelin Sparks</b>\n\t\t\t\t</h4>\n\t\t\t\t<h5 class=\"mbr-section-subtitle mbr-fonts-style align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\t\tProject manager</h5>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dolorem quo in, animi iste magnam, saepe accusantium veritatis vitae perferendis delectus eligendi officia nulla pariatur incidunt culpa vel doloribus rem.\n\t\t\t\t</p>\n\t\t\t\t<div class=\"social mbr-row mbr-justify-content-center\" mbr-if=\"showIcons\">\n\t\t\t\t\t<div class=\"unline\"></div>\n\t\t\t\t\t<a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-col-lg-4 amp-iconfont fa-twitter fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconAmount>1\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-col-lg-4 amp-iconfont fa-facebook-square fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://plus.google.com/u/0/+Mobirise/posts\" target=\"_blank\" mbr-if=\"iconAmount>2\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-col-lg-4 amp-iconfont fa-google-plus fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"http://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw\" target=\"_blank\" mbr-if=\"iconAmount>3\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-col-lg-4 amp-iconfont fa-youtube fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-4\" mbr-if=\"cardsAmount>1\">\n\t\t\t\t<div class=\"image\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/link01-2-366x162.png\" alt=\"image\" height=\"182\" width=\"413.7391304347826\" layout=\"responsive\">\n\t\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<a href=\"https://www.facebook.com/Gina.Chang.angel\"><img src=\"@PROJECT_PATH@/assets/images/link01-2-366x162.png\" class=\"mbr-temp\" alt=\"\" title=\"\"></a>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n\t\t\t\t<b>Jenny Nixon</b>\n\t\t\t\t</h4>\n\t\t\t\t<h5 class=\"mbr-section-subtitle mbr-fonts-style align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\t\tWeb-Designer</h5>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dolorem quo in, animi iste magnam, saepe accusantium veritatis vitae perferendis delectus eligendi officia nulla pariatur incidunt culpa vel doloribus rem.\n\t\t\t\t</p>\n\t\t\t\t<div class=\"social mbr-row mbr-justify-content-center\" mbr-if=\"showIcons\">\n\t\t\t\t\t<div class=\"unline\"></div>\n\t\t\t\t\t<a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-col-lg-4 amp-iconfont fa-twitter fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconAmount>1\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-col-lg-4 amp-iconfont fa-facebook-square fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://plus.google.com/u/0/+Mobirise/posts\" target=\"_blank\" mbr-if=\"iconAmount>2\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-col-lg-4 amp-iconfont fa-google-plus fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"http://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw\" target=\"_blank\" mbr-if=\"iconAmount>3\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-col-lg-4 amp-iconfont fa-youtube fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"card mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-4\" mbr-if=\"cardsAmount>2\">\n\t\t\t\t<div class=\"image\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/link02-365x162.png\" alt=\"image\" height=\"183\" width=\"414.87577639751555\" layout=\"responsive\">\n\t\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<a href=\"http://meowgina.pixnet.net/blog\"><img src=\"@PROJECT_PATH@/assets/images/link02-365x162.png\" class=\"mbr-temp\" alt=\"\" title=\"\"></a>\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n\t\t\t\t<b>Gregor Dunkins</b>\n\t\t\t\t</h4>\n\t\t\t\t<h5 class=\"mbr-section-subtitle mbr-fonts-style align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">\n\t\t\t\tArt-Director</h5>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dolorem quo in, animi iste magnam, saepe accusantium veritatis vitae perferendis delectus eligendi officia nulla pariatur incidunt culpa vel doloribus rem.\n\t\t\t\t</p>\n\t\t\t\t<div class=\"social mbr-row mbr-justify-content-center\" mbr-if=\"showIcons\">\n\t\t\t\t\t<div class=\"unline\"></div>\n\t\t\t\t\t<a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-col-lg-4 amp-iconfont fa-twitter fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://www.facebook.com/pages/Mobirise/1616226671953247\" target=\"_blank\" mbr-if=\"iconAmount>1\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-col-lg-4 amp-iconfont fa-facebook-square fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"https://plus.google.com/u/0/+Mobirise/posts\" target=\"_blank\" mbr-if=\"iconAmount>2\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-col-lg-4 amp-iconfont fa-google-plus fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t\t<a href=\"http://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw\" target=\"_blank\" mbr-if=\"iconAmount>3\">\n\t\t\t\t\t\t<span mbr-icon=\"\" class=\"mbr-col-lg-4 amp-iconfont fa-youtube fa\"></span>\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "qSaTetJd30",
+          "_anchor": "team1-u",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "p": {
+              "letter-spacing": "0"
+            },
+            ".items-col": {
+              "p": {
+                "margin": "0",
+                "padding": "0",
+                "margin-bottom": "1rem",
+                "&.adress": {
+                  "padding-bottom": "5px"
+                }
+              }
+            },
+            ".image-block": {
+              ".image": {
+                "width": "33.33%",
+                "position": "relative",
+                "float": "left",
+                "display": "inline-block",
+                "margin-right": "1rem",
+                "overflow": "hidden"
+              }
+            },
+            ".group-title": {
+              "margin-bottom": "1rem",
+              "color": "white",
+              "padding-bottom": "0px",
+              "padding-top": "0px"
+            },
+            ".news": {
+              "display": "inline-block",
+              "width": "100%",
+              "margin-bottom": "1rem"
+            },
+            ".image-block p, .image-block a": {
+              "margin-bottom": "0",
+              "padding": "0"
+            },
+            ".images-col": {
+              ".mbr-row": {
+                "padding-left": "15px"
+              },
+              ".image": {
+                "max-width": "8rem",
+                "margin-right": "0.3rem",
+                "margin-bottom": "0.3rem",
+                "text-align": "center",
+                "width": "30%",
+                "overflow": "hidden"
+              }
+            },
+            ".latest-news": {
+              "p": {
+                "padding": "0"
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".group-title": {
+                "padding-top": "2rem"
+              }
+            },
+            "amp-img:hover": {
+              "transform": "scale(1.1)"
+            },
+            ".container > .mbr-row": {
+              "justify-content": "space-around"
+            }
+          },
+          "_name": "footer2",
+          "_customHTML": "<section class=\"footer2\" group=\"Footers\" plugins=\"amp-main, amp-image-lightbox\">\n\t<mbr-parameters>\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\t<input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n\t<input type=\"checkbox\" title=\"Show Column Title\" name=\"showTitle\" checked=\"\">\n\t<input type=\"checkbox\" title=\"First Column\" name=\"firstColumn\" checked=\"\">\n\t<input type=\"checkbox\" title=\"Second Column\" name=\"secondColumn\">\n\t<input type=\"checkbox\" title=\"Third Column\" name=\"thirdColumn\" checked=\"\">\n\t<input type=\"checkbox\" title=\"Fourth Column\" name=\"fourthColumn\" checked=\"\">\n\t<fieldset type=\"background\" name=\"bg\">\n\t\t<input type=\"image\" title=\"Background Image\" value=\"../_images/background/background3.jpg\" selected=\"\">\n\t\t<input type=\"color\" title=\"Background Color\" value=\"#222222\" selected=\"\">\n\t</fieldset>\n\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\t<div class=\"container\">\n\t\t<div class=\"mbr-row\">\n\t\t\t<div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-left items-col\" mbr-if=\"firstColumn\">\n\t\t\t\t<h3 class=\"mbr-text mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\"><em>天使美睫</em></h3>\n\t\t\t\t<p class=\"mbr-text mbr-white text mbr-fonts-style adress\" mbr-theme-style=\"display-4\" data-app-selector=\".text\">台北市中正區信陽街11號3樓<br>捷運 台北車站M8出口三分鐘<br>營業時間-11:00~20:00<br>\n\t\t\t\t</p>\n\t\t\t\t<p class=\"mbr-text mbr-white text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".items-col .text\">\n\t\t\t\t\t<strong>Phone:&nbsp;<a href=\"tel:0929303707\" class=\"text-primary\"> 0929-303707</a></strong></p>\n\t\t\t\t<p class=\"mbr-text mbr-white text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text\"><strong>Line ID: </strong><a href=\"#\" class=\"mbr-white text-primary\">@happy520</a>\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t\t<div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3  align-left image-block\" mbr-if=\"secondColumn\">\n\t\t\t\t<h3 class=\"mbr-text mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\"><i>重要消息</i></h3>\n\t\t\t\t<div class=\"news\">\n\t\t\t\t\t<div class=\"image\">\n\t\t\t\t\t\t<amp-img on=\"tap:lightbox1\" role=\"button\" tabindex=\"0\" src=\"@PROJECT_PATH@/assets/images/foot-news-1.jpg\" layout=\"responsive\" height=\"69\" width=\"104.11469933184856\" alt=\"Mobirise\">\n\t\t\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/foot-news-1.jpg\" alt=\"Mobirise\">\n\t\t\t\t\t\t</amp-img>\n\t\t\t\t\t</div>\n\t\t\t\t\t<p class=\"mbr-text mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\"image-block .mbr-text\">\n\t\t\t\t\t\t<a href=\"#\" class=\"mbr-white\">\n\t\t\t\t\t\tPellentesque Interdum Imper Diet Nibh In Porttitor</a>\n\t\t\t\t\t\t<span><br>15/05/16</span>\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t\t<br>\n\t\t\t\t<div class=\"news\">\n\t\t\t\t\t<div class=\"image\">\n\t\t\t\t\t\t<amp-img on=\"tap:lightbox2\" role=\"button\" tabindex=\"0\" src=\"@PROJECT_PATH@/assets/images/foot-news-2.jpg\" layout=\"responsive\" height=\"70\" width=\"105\" alt=\"Mobirise\">\n\t\t\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/foot-news-2.jpg\" alt=\"Mobirise\">\n\t\t\t\t\t\t</amp-img>\n\t\t\t\t\t</div>\n\t\t\t\t\t<p class=\"mbr-text mbr-white mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\"image-block .mbr-text\">\n\t\t\t\t\t\t<a href=\"#\" class=\"mbr-white\">\n\t\t\t\t\t\tPellentesque Interdum Imper Diet Nibh In Porttitor</a>\n\t\t\t\t\t\t<span><br>15/05/16</span>\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3  align-left latest-news\" mbr-if=\"thirdColumn\">\n\t\t\t\t<h3 class=\"mbr-text mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\"><i>參考連結</i></h3>\n\t\t\t\t<p class=\"mbr-text mbr-white text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\"latest-news .text\">\n\t\t\t\t\t<strong>Alexander Sturg: </strong><a class=\"mbr-white\" href=\"#\">Curabitur augue elit, egestas vitae erat sed, in the\tmaximus sollicitudin nisi</a>\n\t\t\t\t</p>\n\t\t\t\t<p class=\"mbr-text mbr-white text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text\">\n\t\t\t\t\t<strong>Alexander Sturg: </strong><a class=\"mbr-white\" href=\"#\">Curabitur augue elit, egestas vitae\terat sed, in the maximus sollicitudin nisi</a>\n\t\t\t\t</p>\n\t\t\t\t<p class=\"mbr-text mbr-white text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text\">\n\t\t\t\t\t<strong>Alexander Sturg: </strong><a class=\"mbr-white\" href=\"#\">Curabitur augue elit, egestas vitae\terat sed, in the maximus sollicitudin nisi</a>\n\t\t\t\t</p>\n\t\t\t\t<p class=\"mbr-text mbr-white text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".text\">\n\t\t\t\t\t<strong>Alexander Sturg: </strong><a class=\"mbr-white\" href=\"#\">Curabitur augue elit, egestas vitae\terat sed, in the maximus sollicitudin nisi</a>\n\t\t\t\t</p>\n\t\t\t</div>\n\t\t\t<div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3  align-left images-col\" mbr-if=\"fourthColumn\">\n\t\t\t\t<h3 class=\"mbr-text mbr-bold mbr-fonts-style group-title\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".group-title\"><i>參考照片</i></h3>\n\t\t\t\t<div class=\"mbr-row mbr-col-lg-12\">\n\t\t\t\t\t<div class=\"image\">\n\t\t\t\t\t\t<amp-img on=\"tap:lightbox3\" role=\"button\" tabindex=\"0\" src=\"@PROJECT_PATH@/assets/images/inst-1.jpg\" layout=\"responsive\" height=\"57\" width=\"85.5\" alt=\"Mobirise\">\n\t\t\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/inst-1.jpg\" alt=\"Mobirise\">\n\t\t\t\t\t\t</amp-img>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"image\">\n\t\t\t\t\t\t<amp-img on=\"tap:lightbox4\" role=\"button\" tabindex=\"0\" src=\"@PROJECT_PATH@/assets/images/inst-2.jpg\" layout=\"responsive\" height=\"60\" width=\"85.22210184182016\" alt=\"Mobirise\">\n\t\t\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/inst-2.jpg\" alt=\"Mobirise\">\n\t\t\t\t\t\t</amp-img>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"image\">\n\t\t\t\t\t\t<amp-img on=\"tap:lightbox5\" role=\"button\" tabindex=\"0\" src=\"@PROJECT_PATH@/assets/images/inst-3.jpg\" layout=\"responsive\" height=\"57\" width=\"85.62666666666667\" alt=\"Mobirise\">\n\t\t\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/inst-3.jpg\" alt=\"Mobirise\">\n\t\t\t\t\t\t</amp-img>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"image\">\n\t\t\t\t\t\t<amp-img on=\"tap:lightbox6\" role=\"button\" tabindex=\"0\" src=\"@PROJECT_PATH@/assets/images/inst-4.jpg\" layout=\"responsive\" height=\"54\" width=\"83.83089064261556\" alt=\"Mobirise\">\n\t\t\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/inst-4.jpg\" alt=\"Mobirise\">\n\t\t\t\t\t\t</amp-img>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"image\">\n\t\t\t\t\t\t<amp-img on=\"tap:lightbox7\" role=\"button\" tabindex=\"0\" src=\"@PROJECT_PATH@/assets/images/inst-5.jpg\" layout=\"responsive\" height=\"57\" width=\"85.3418423973363\" alt=\"Mobirise\">\n\t\t\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/inst-5.jpg\" alt=\"Mobirise\">\n\t\t\t\t\t\t</amp-img>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"image\">\n\t\t\t\t\t\t<amp-img on=\"tap:lightbox8\" role=\"button\" tabindex=\"0\" src=\"@PROJECT_PATH@/assets/images/inst-6.jpg\" layout=\"responsive\" height=\"57\" width=\"85.5\" alt=\"Mobirise\">\n\t\t\t\t\t\t\t<div placeholder=\"\">\n\t\t\t\t\t\t\t\t<div class=\"mobirise-spinner\">\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t\t<em></em>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/inst-6.jpg\" alt=\"Mobirise\">\n\t\t\t\t\t\t</amp-img>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n<amp-image-lightbox id=\"lightbox1\" layout=\"nodisplay\"></amp-image-lightbox>\n<amp-image-lightbox id=\"lightbox2\" layout=\"nodisplay\"></amp-image-lightbox>\n<amp-image-lightbox id=\"lightbox3\" layout=\"nodisplay\"></amp-image-lightbox>\n<amp-image-lightbox id=\"lightbox4\" layout=\"nodisplay\"></amp-image-lightbox>\n<amp-image-lightbox id=\"lightbox5\" layout=\"nodisplay\"></amp-image-lightbox>\n<amp-image-lightbox id=\"lightbox6\" layout=\"nodisplay\"></amp-image-lightbox>\n</section>",
+          "_cid": "qSbGj1993I",
+          "_anchor": "footer2-y",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "p": {
+              "margin": "0",
+              "font-weight": "600"
+            },
+            ".footerLink": {
+              "font-weight": "600"
+            }
+          },
+          "_name": "footer1",
+          "_customHTML": "<section class=\"footer1\" group=\"Footers\" plugins=\"amp-main\" global once=\"footer\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n    <fieldset type=\"background\" name=\"bg\">\n        <input type=\"color\" title=\"Background Color\" value=\"#757575\" selected>\n    </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"container\">\n        <div class=\"mbr-col-sm-12 align-center\">\n            <p class=\"mbr-text mbr-white mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\">Copyright© 2015 天使時尚美睫館.</p>\n        </div>\n    </div>\n</section>",
+          "_cid": "qSb7TDC6mR",
+          "_anchor": "footer1-x",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footer",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
